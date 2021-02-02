@@ -1,0 +1,181 @@
+body {
+  font-size: 16px;
+  color: black;
+  background-color: #fff;
+  font-family: 'Roboto';
+}
+
+h1 {
+  font-family: Roboto;
+  font-weight: bold;
+  padding: 25px;
+  font-size: 175%;
+  text-align: center;
+}
+
+h2 {
+  font-size: 160%;
+  color: black;
+  background-color: #fff;
+  font-family: 'Roboto';
+  padding-top: 40px;
+
+}
+
+h3 {
+  font-family: Roboto;
+  font-weight: bolder;
+  font-size: 125%;
+  letter-spacing: 1px;
+  color: #4187e9;
+  padding: 12px;
+  text-align: center;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: #F0F0F7;
+  border-radius: 0;
+  border: 0;
+  box-shadow: 1px 4px 6px -4px rgba(0,0,0,.5);
+}
+
+
+.navbar-brand {
+  text-decoration: none;
+}
+
+.navbar-brand h1 { /* Food,LLC*/
+  font-family: 'Roboto';
+  color: #000;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+ vertical-align: center;
+
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+  vertical-align: center;
+}
+
+#nav-list {
+  margin-top: 5px;
+}
+#nav-list a {
+  color: black;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #2f3745;
+  color: white
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid black;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -20px;
+}
+/* END HEADER */
+
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+  
+div#container {
+  position: relative;
+  background-color: #F0F0F7;
+  padding: 20px;
+  margin-bottom: 45px;
+  margin-right: 40px;
+  margin-left: 40px;
+  margin-top: 25px;
+}
+
+#chicken {
+  text-align: center;
+}
+
+#beef {
+  text-align: center;
+}
+
+#sushi {
+  text-align: center;
+}
+
+
+/* END HEADER */
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  #nav-list{
+    visibility: hidden;
+  }
+    .navbar-brand {
+    padding-top: 10px;
+    height: 60px;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  #nav-list{
+    visibility: hidden;
+  }
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  #nav-list{
+    visibility: hidden;
+
+  }
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 20px;
+    height: 60px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 20px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+  #container {
+  position: relative;
+  background-color: #F0F0F7;
+  padding: 20px;
+  margin-bottom: 45px;
+  margin-right: 80px;
+  margin-left: 80px;
+  margin-top: 25px;
+}
+
+  /* End Header */
+
+}
+
